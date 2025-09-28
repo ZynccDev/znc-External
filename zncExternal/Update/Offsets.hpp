@@ -8,7 +8,7 @@ namespace offsets {
     inline uintptr_t parent = 0x58;
     inline uintptr_t children = 0x68;
     inline uintptr_t children_end = 0x8;
-    inline uintptr_t Gravity = 0x1AC;
+    inline uintptr_t Gravity = 0x998;
     inline uintptr_t GravityInfo = 0x3d8;
 
     inline uintptr_t cframe = 0x130;
@@ -24,9 +24,9 @@ namespace offsets {
 	inline uintptr_t cancollide = 0x2E5;
     inline uintptr_t primitive = 0x178;
 	// DataModel
-    inline uintptr_t fakedatamodel = 0x70A86B8;
-    inline uintptr_t fakedm_to_dm = 0x1C0;
+    inline uintptr_t fakedatamodel = 0x7168648; // this is very important offset (you will crash without it)
+    inline uintptr_t fakedm_to_dm = 0x1C0; // hardly changes
     // ClassName
     inline uintptr_t classdescriptor = 0x18;
-    inline uintptr_t classdescriptortoclassname = 0x18;
+    inline uintptr_t classdescriptortoclassname = 0x8;
 }
